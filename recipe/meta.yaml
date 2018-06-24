@@ -17,21 +17,20 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
-    - toolchain
     - cython
-    - gcc  # [linux]
     # Pin numpy at build time with the minimum version available.
-    - numpy 1.10.*  # [not win]
-    - numpy 1.11.*  # [win]
+    - numpy         # [not win]
+    - numpy         # [win]
     - scipy >=0.17
     - requests
   run:
     - python
-    - libgcc  # [linux]
-    - numpy >=1.10  # [not win]
-    - numpy >=1.11  # [win]
+    - {{ pin_compatible('numpy') }}   # [not win]
+    - {{ pin_compatible('numpy') }}   # [win]
     - scipy >=0.17
     - requests
 
