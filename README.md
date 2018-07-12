@@ -18,14 +18,16 @@ fast (via multithreaded model estimation), and produces high quality results.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/lightfm-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lightfm-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/lightfm-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/lightfm-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/lightfm-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/lightfm-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/lightfm-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/lightfm-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/lightfm-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/lightfm-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/lightfm-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/lightfm-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lightfm/badges/version.svg)](https://anaconda.org/conda-forge/lightfm)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lightfm/badges/downloads.svg)](https://anaconda.org/conda-forge/lightfm)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-lightfm-green.svg)](https://anaconda.org/conda-forge/lightfm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lightfm.svg)](https://anaconda.org/conda-forge/lightfm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/lightfm.svg)](https://anaconda.org/conda-forge/lightfm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lightfm.svg)](https://anaconda.org/conda-forge/lightfm) |
 
 Installing lightfm
 ==================
