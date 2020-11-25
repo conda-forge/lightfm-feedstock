@@ -5,9 +5,13 @@ Home: https://github.com/lyst/lightfm
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lightfm-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python implementation of LightFM, a hybrid recommendation algorithm.
+
+Development: https://github.com/lyst/lightfm
+
+Documentation: http://lyst.github.io/lightfm/docs/home.html
 
 LightFM is a Python implementation of a number of popular recommendation
 algorithms for both implicit and explicit feedback, including efficient
