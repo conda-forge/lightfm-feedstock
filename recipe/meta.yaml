@@ -11,7 +11,7 @@ source:
 build:
   script_env:
     - LIGHTFM_NO_CFLAGS
-  number: 1003
+  number: 1004
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
