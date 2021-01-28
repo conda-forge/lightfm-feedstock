@@ -11,8 +11,10 @@ source:
 build:
   script_env:
     - LIGHTFM_NO_CFLAGS
-  number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 2
+  script: 
+    - export LIGHTFM_NO_CLFAGS=1
+    - {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
