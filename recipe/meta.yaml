@@ -9,12 +9,11 @@ source:
   sha256: 41950fd8affde192c10b517148aa7f6d016ae2f75a2ec1187335f1c4d21876ac
 
 build:
-  script_env:
-    - LIGHTFM_NO_CFLAGS
   number: 2
   script: 
-    - export LIGHTFM_NO_CLFAGS=1
-    - {{ PYTHON }} -m pip install . --no-deps -vv
+    # LIGHTFM_NO_CFLAGS is set to build without -march=nativ and -ffast-math as defined in setup.py
+    - export LIGHTFM_NO_CLFAGS=1 && {{ PYTHON }} -m pip install . --no-deps -vv # [unix]
+    - set LIGHTFM_NO_CLFAGS=1 && {{ PYTHON }} -m pip install . --no-deps -vv # [win]
 
 requirements:
   build:
