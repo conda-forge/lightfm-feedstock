@@ -10,8 +10,6 @@ source:
 
 build:
   number: 2
-  script_env:
-    - LIGHTFM_NO_CFLAGS
   script: 
     # LIGHTFM_NO_CFLAGS is set to build without -march=nativ and -ffast-math as defined in setup.py
     - export LIGHTFM_NO_CFLAGS=1 && {{ PYTHON }} -m pip install . --no-deps -vv  # [unix]
