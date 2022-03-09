@@ -54,5 +54,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - SimonCW
     - maciejkula
     - rth
