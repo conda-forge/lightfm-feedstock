@@ -1,4 +1,4 @@
-{% set version = "1.16" %}
+{% set version = "1.17" %}
 
 package:
   name: lightfm
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/lightfm/lightfm-{{ version }}.tar.gz
-  sha256: 41950fd8affde192c10b517148aa7f6d016ae2f75a2ec1187335f1c4d21876ac
+  sha256: 2b77ada182ccd768a8d7643ab3cfcd8b6e855db09087f7cc7329bd63316697a8
 
 build:
-  number: 2
-  script: 
+  number: 0
+  script:
     # LIGHTFM_NO_CFLAGS is set to build without -march=nativ and -ffast-math as defined in setup.py
     - export LIGHTFM_NO_CFLAGS=1 && {{ PYTHON }} -m pip install . --no-deps -vv  # [unix]
     - set LIGHTFM_NO_CFLAGS=1 && {{ PYTHON }} -m pip install . --no-deps -vv  # [win]
